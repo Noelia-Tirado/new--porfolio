@@ -2,7 +2,7 @@ let opiniones = [];
 let indiceActual = 0;
 
 // -----Cargamos el archivo JSON------
-fetch("../assets/data/opiniones.json")
+fetch("assets/data/opiniones.json")
   .then(response => response.json())
   .then(data => {
     opiniones = data;

@@ -2,7 +2,7 @@
 
 let presentacionContainer = document.getElementById('presentacion-container')
 
-fetch('../assets/data/datos.json')
+fetch('assets/data/datos.json')
     .then(response => response.json())
     .then( data => {
         data.presentacion.map((item) => {

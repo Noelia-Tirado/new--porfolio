@@ -1,7 +1,7 @@
 // ------  Usando lo aprendido de JSON y fetch hacemos la section de servicios ------ 
 let servicios = document.querySelector('.serviceContainer')
 
-fetch('../assets/data/datos.json')
+fetch('assets/data/datos.json')
     .then(response => response.json())
     .then( data => {
         data.servicios.map((item) => {

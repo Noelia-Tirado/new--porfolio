@@ -2,7 +2,7 @@
 
 let proyectoContainer = document.querySelector('.grid-2')
 
-fetch('../assets/data/datos.json')
+fetch('assets/data/datos.json')
     .then(response => response.json() )
     .then(data => {
         data.proyectos.map((item) => {

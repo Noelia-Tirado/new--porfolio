@@ -2,7 +2,7 @@
 
 let navbarLinks = document.getElementById('links-navbar')
 
-fetch('../assets/data/datos.json')
+fetch('assets/data/datos.json')
     .then(response => response.json())
     .then(data => {
         data.navItems.map((link) => {
