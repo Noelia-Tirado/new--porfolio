@@ -7,32 +7,32 @@ let proyectos = [
     {
         titulo: "Restaurante Disfrutar",
         categoria: "restaurante",
-        imagen: "assets/imgs/Disfrutar.png"
+        imagen: "./assets/imgs/Disfrutar.png"
     },
     {
         titulo: "Landing moderna",
         categoria: "landing",
-        imagen: "assets/imgs/Landing.png"
+        imagen: "./assets/imgs/Landing.png"
     },
     {
         titulo: "Taller Online",
         categoria: "talleres",
-        imagen: "assets/imgs/Mecanico.png"
+        imagen: "./assets/imgs/Mecanico.png"
     },
     {
         titulo: "Mudanzas",
         categoria: "mudanza",
-        imagen: "assets/imgs/Mudanza.png"
+        imagen: "./assets/imgs/Mudanza.png"
     },
     {
         titulo: "Taller especializado en neumáticos",
         categoria: "talleres",
-        imagen: "assets/imgs/Ruedas.png"
+        imagen: "./assets/imgs/Ruedas.png"
     },
     {
         titulo: "Restaurante Tsuro",
         categoria: "restaurante",
-        imagen: "assets/imgs/Tsuro.png"
+        imagen: "./assets/imgs/Tsuro.png"
     }
 ];
 
