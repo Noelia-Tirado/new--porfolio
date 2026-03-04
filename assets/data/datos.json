@@ -1,0 +1,57 @@
+{
+  "navItems": [
+    { "title": "Presentación", "url": "index.html#presentacion" },
+    { "title": "Proyectos", "url": "index.html#proyectos" },
+    { "title": "Contacto", "url": "contacto.html" },
+    { "title": "Galería", "url": "galeria.html" },
+    { "title": "Presupuesto", "url": "presupuesto.html" }
+  ],
+
+
+"presentacion" : [
+    {
+        "nombre": "Noelia Tirado",
+        "puesto": "Estudiante de Desarrollo Web",
+        "descripcion": "Mi nombre es Noelia. Soy estudiante de Desarrollo Web en la escuela de MasterD/Davante. Aquí encontraréis algunos de mis proyectos, además de un formulario de contacto y los links a mis redes sociales relacionadas con mi trabajo. ",
+        "linkedin": "https://www.linkedin.com/in/noelia-tirado-94553925a/",
+        "github": "https://github.com/Noelia-Tirado",
+        "cvLink": "assets/CV Noelia Tirado.jpg"
+    }
+],
+
+"proyectos" : [
+    {
+        "nombre": "BLOSSOM TRAVEL",
+        "descripcion": "Creación de una agencia dedicada a los viajes a Japón. Primer proyecto usando HTML y CSS, implementado todo lo dado en clases de MasterD/Davante. Busqué darle el mayor dinamismo posible aún sin haber llegado a JavaScript. Mezclé para esta web mis pasiones; los viajes, Japón, una estética agradable y suave, y por supuesto, el desarrollo web",
+        "tecnologias": "HTML y CSS",
+        "imagen": "assets/Proyectos/BlossomTravel.png"
+
+    },
+    {
+        "nombre": "REGALO",
+        "descripcion": "Una pequeña página donde usando los conocimientos nuevos de JavaScript y los ya obtenidos anteriormente, hice una pequeña web para el cumpleaños de mi pareja. Con imágenes, carrusel y fondos dinámicos.",
+        "tecnologias": "HTML, CSS y JavaScript",
+        "imagen": "assets/Proyectos/GiftWeb.png"
+
+    }
+],
+
+"servicios": [
+    {
+        "titulo": "Diseño y desarrollo web",
+        "descripcion": "Creación de sitios web modernos y responsive. Adaptados a distintos dispositivos, cuidando estructura, usabilidad y experiencia del usuario"
+    },
+     {
+        "titulo": "Funcionalidades dinámicas",
+        "descripcion": "Implementación de componentes interactivos como galerías dinámicas, carruseles, formularios con validación y consumo de datos desde archivos o APIs."
+    },
+     {
+        "titulo": "Optimización y buenas prácticas",
+        "descripcion": "Mejora del rendimiento, organización del código, accesibilidad básica y estructura semántica para facilitar el mantenimiento del proyecto."
+    },
+     {
+        "titulo": "Mantenimiento y soporte",
+        "descripcion": "Actualización de contenidos, pequeñas mejoras visuales o funcionales y resolución de incidencias técnicas."
+    }
+]
+}

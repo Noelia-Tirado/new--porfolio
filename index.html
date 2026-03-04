@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+
+        <nav>
+            <h1> Porfolio</h1>
+
+            <div class="links-navbar" id="links-navbar"> </div>
+            <button class="btn-change-theme" id="change-theme">
+                <img src="./assets/imgs/moon-svgrepo-com.svg" alt="Icono Luna" class="icono" id="icono-dark">
+                <img src="./assets/imgs/sun-svgrepo-com.svg" alt="Icono sol" class="icono" id="icono-light">
+            </button>
+        </nav>
+        
+    </header>
+
+    <main>
+
+        <!----Sección para presentarnos como desarrolladores---->
+        
+        <section class="section" id="presentacion">
+        
+            <h2 class="title"> Presentación</h2>
+            <div class="presentacion-container" id="presentacion-container"> </div>
+
+        </section>
+
+        <!----Sección donde encontramos los proyectos oficiales que hemos hecho---->
+         <section class="section" id="proyectos">
+        
+            <h2 class="title"> Proyectos oficiales</h2>
+
+            <div class="grid-2"> </div>
+        </section>
+
+        <!----Sección con un carrusel que exporta datos json donde se ven opiniones de nuestro trabajo---->
+        <section class="section">
+            <div class="carousel">
+                <button class="btn" id="prev">◀</button>
+
+                <div class="carousel-card">
+                <p id="texto"></p>
+                <span id="autor"></span>
+                </div>
+
+                <button class="btn" id="next">▶</button>
+                </div>
+        </section>
+
+        <!----Sección para los servicios que ofrecemos---->
+        <section class="section" id="servicios">
+            <h2 class="title"> Servicios ofrecidos </h2 >
+            <div class="serviceContainer"></div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#"> Aviso legal y Política de privacidad</a>
+        <div class="footer-img">
+            <a href="#"><img src="./assets/imgs/instagram-1-svgrepo-com.svg" alt="logo de instagram"></a>
+            <a href="#"><img src="./assets/imgs/twitterx.png" alt="logo de twitter"></a>
+        </div>
+        <div class="footer-direction">
+            <h4> Contacto </h4>
+        <p>+34 856 24 25 65 <br> blossomdeveloper@gmail.com</p>
+        </div>
+        <div class="footer-direction">
+            <h4> Dirección </h4>
+        <p>C. Luis Braille, Mieres <br> 33600</p>
+        </div>
+    </footer>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/presentacion.js"></script>
+    <script src="./js/proyectos.js"></script>
+    <script src="./js/carrusel.js"></script>
+    <script src="./js/servicios.js"></script>
+    <script src="./js/tema.js"></script>
+</body>
+</html>

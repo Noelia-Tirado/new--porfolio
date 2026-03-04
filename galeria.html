@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+
+        <nav>
+            <h1> Porfolio</h1>
+
+            <div class="links-navbar" id="links-navbar"> </div>
+            <button class="btn-change-theme" id="change-theme">
+                <img src="./assets/imgs/moon-svgrepo-com.svg" alt="Icono Luna" class="icono" id="icono-dark">
+                <img src="./assets/imgs/sun-svgrepo-com.svg" alt="Icono sol" class="icono" id="icono-light">
+            </button>
+        </nav>
+        
+    </header>
+
+    <section class="section" id="galeria">
+        <h2 class="title"> Casos ficticios </h2>
+        <div class="galeria">
+
+    <!----Botones para filtrar las categorías de las webs que hemos hecho---->
+            <div class="filtros">
+                <button class="button-choice" data-categoria="todas">Todas</button>
+                <button class="button-choice" data-categoria="restaurante">Restaurantes</button>
+                <button class="button-choice" data-categoria="landing">Landing</button>
+                <button class="button-choice" data-categoria="talleres">Talleres</button>
+                <button class="button-choice" data-categoria="mudanza">Mudanza</button>
+            </div>
+
+            <!----Contenedor para las imágenes con ejemplos---->
+            <div class="galeria-contenedor" id="contenedor-galeria">            </div>
+
+        </div>
+    </section>
+    <footer>
+        <a href="#"> Aviso legal y Política de privacidad</a>
+        <div class="footer-img">
+            <a href="#"><img src="./assets/imgs/instagram-1-svgrepo-com.svg" alt="logo de instagram"></a>
+            <a href="#"><img src="./assets/imgs/twitterx.png" alt="logo de twitter"></a>
+        </div>
+        <div class="footer-direction">
+            <h4> Contacto </h4>
+        <p>+34 856 24 25 65 <br> blossomdeveloper@gmail.com</p>
+        </div>
+        <div class="footer-direction">
+            <h4> Dirección </h4>
+        <p>C. Luis Braille, Mieres <br> 33600</p>
+        </div>
+    </footer>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/galeria.js"></script>
+    <script src="./js/tema.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+
+        <nav>
+            <h1> Porfolio</h1>
+
+            <div class="links-navbar" id="links-navbar"> </div>
+            <button class="btn-change-theme" id="change-theme">
+                <img src="./assets/imgs/moon-svgrepo-com.svg" alt="Icono Luna" class="icono" id="icono-dark">
+                <img src="./assets/imgs/sun-svgrepo-com.svg" alt="Icono sol" class="icono" id="icono-light">
+            </button>
+        </nav>
+        
+    </header>
+
+    <section class="section presupuesto" id="presupuesto">
+
+        <h2 class="title">Presupuesto</h2>
+
+        <div class="form-container">
+        <form class="form" id="formulario">
+
+            <!----Parte del formulario donde se encontrarán los datos del cliente, todos obligatorios---->
+
+            <div class="input-contenedor">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                <span class="error" id="nombreError"></span>
+            </div>
+
+            <div class="input-contenedor">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" required>
+                <span class="error" id="apellidosError"></span>
+            </div>
+
+            <div class="input-contenedor">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" required>
+                <span class="error" id="telefonoError"></span>
+            </div>
+
+            <div class="input-contenedor">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <!----Parte del formulario para que elija que servicio necesita---->
+
+            <!----Usamos onchange para que el cambio se haga de forma automática---->
+
+            <div class="input-contenedor">
+                <label for="producto">Producto:</label>
+                <select id="producto" onchange="calcularPresupuesto()" required>
+                    <option value="web">Diseño Web - 600€</option>
+                    <option value="optimizacion">Optimización- 250€</option>
+                    <option value="funcionalidad">Funcionalidades dinámicas - 350€</option>
+                </select>
+            </div>
+
+            <div class="input-contenedor">
+                <label for="plazo">Plazo (meses):</label>
+                <input type="number" id="plazo" min="1" onchange="calcularPresupuesto()" required>
+            </div>
+
+            <div class="input-contenedor">
+                <p>
+                    Descuentos:<br>
+                    6 a 11 meses → 10%<br>
+                    12 meses o más → 15%
+                </p>
+            </div>
+
+            <div class="input-contenedor">
+                <label>Extras:</label>
+                <label>
+                    <input type="checkbox" name="extra" value="100"
+                        onchange="calcularPresupuesto()"> Dominio y hosting (+100€)
+                </label>
+                <label>
+                    <input type="checkbox" name="extra" value="150"
+                        onchange="calcularPresupuesto()"> Optimización avanzada (+150€)
+                </label>
+                <label>
+                    <input type="checkbox" name="extra" value="450"
+                        onchange="calcularPresupuesto()"> Mantenimiento 3 meses (+450€)
+                </label>
+            </div>
+
+            <div class="input-contenedor">
+                <label for="presupuestoFinal">Presupuesto final:</label>
+                <input type="text" id="presupuestoFinal" readonly>
+            </div>
+
+            <!----Checkbox para aceptar las condiciones---->
+
+            <div class="input-contenedor">
+                <label>
+                    <input type="checkbox" id="condiciones" required>
+                    Acepto las condiciones de privacidad
+                </label>
+            </div>
+
+        <!----Botones para enviar o resetear el formulario---->
+            <div class="button-contenedor">
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetear</button>
+            </div>
+
+        </form>
+        </div>
+
+
+    </section>
+
+     <footer>
+        <a href="#"> Aviso legal y Política de privacidad</a>
+        <div class="footer-img">
+            <a href="#"><img src="./assets/imgs/instagram-1-svgrepo-com.svg" alt="logo de instagram"></a>
+            <a href="#"><img src="./assets/imgs/twitterx.png" alt="logo de twitter"></a>
+        </div>
+        <div class="footer-direction">
+            <h4> Contacto </h4>
+        <p>+34 856 24 25 65 <br> blossomdeveloper@gmail.com</p>
+        </div>
+        <div class="footer-direction">
+            <h4> Dirección </h4>
+        <p>C. Luis Braille, Mieres <br> 33600</p>
+        </div>
+    </footer>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/formulario.js"></script>
+    <script src="./js/tema.js"></script>
+</body>
+</html>
