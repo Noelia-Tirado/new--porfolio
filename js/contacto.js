@@ -1,5 +1,5 @@
 let options = { 
-    enableHighAccurancy: true,
+    enableHighAccuracy: true,
     timeout: 5000,
     maximumAge: 0
 }
@@ -29,7 +29,7 @@ function success(position){
         zoom: 10
     })
 
-    L.tileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Mi openStreetMap'}).addTo(map)
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Mi openStreetMap'}).addTo(map)
 
     //-----Definimos los iconos--------
 
@@ -80,7 +80,7 @@ function error(){
     center: [43.254917, -5.778434],
     zoom: 15})
 
-      L.tileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Mi openStreetMap'}).addTo(map)
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Mi openStreetMap'}).addTo(map)
 }
 
 
